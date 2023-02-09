@@ -5,5 +5,17 @@ import Featured from './desktop/Featured'
 import CartButtons from './CartButtons'
 import Footer from './Footer'
 import Reviews from './desktop/Reviews'
+import Loading from './Loading'
+import ErrorWarn from './ErrorWarn'
 
-export { Navbar, Hero, Sidebar, Featured, CartButtons, Footer, Reviews }
+export {
+  Navbar,
+  Hero,
+  Sidebar,
+  Featured,
+  CartButtons,
+  Footer,
+  Reviews,
+  Loading,
+  ErrorWarn,
+}

@@ -32,15 +32,17 @@ export const ProductsProvider = ({ children }) => {
       //  set response to products
       const products = response.data
       dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products })
-    } catch (error) {}
+    } catch (error) {
+      dispatch({ type: GET_PRODUCTS_ERROR })
+    }
   }
 
   useEffect(() => {
-    getAllProducts(url)
+    getAllProducts(`${url}`)
   }, [])
 
   return (
-    <ProductsContext.Provider value='hello'>
+    <ProductsContext.Provider value={{ ...state }}>
       {children}
     </ProductsContext.Provider>
   )

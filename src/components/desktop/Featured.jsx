@@ -1,13 +1,41 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
+import { ProductsContext } from '../../context/products_context'
 import { deliverySteps } from '../../utils/constants'
+import Loading from '../Loading'
+import ErrorWarn from '../ErrorWarn'
+
 const Featured = () => {
+  const { products_loading, products_error, featured_products } =
+    useContext(ProductsContext)
+
+  if (products_loading) {
+    return <Loading />
+  }
+
+  if (products_error) {
+    return <ErrorWarn />
+  }
+
   return (
     <Wrapper>
       <div className='container featured'>
         <h2 className='top-title'>Our Featured Bites</h2>
 
-        <div className='container products'></div>
+        <div className='container products'>
+          <div className='row'>
+            <div className='col-sm-4'>
+              {featured_products.map((product) => {
+                console.log(product)
+                return (
+                  <li key={product.id} {...product}>
+                    {product.name}
+                  </li>
+                )
+              })}
+            </div>
+          </div>
+        </div>
 
         <div className='container delivery-steps'>
           <div className='row'>
