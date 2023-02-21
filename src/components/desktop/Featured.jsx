@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { ProductsContext } from '../../context/products_context'
-import { deliverySteps } from '../../utils/constants'
 import Loading from '../Loading'
 import ErrorWarn from '../ErrorWarn'
+import Product from '../Product'
+import { Link } from 'react-router-dom'
 
 const Featured = () => {
   const { products_loading, products_error, featured_products } =
@@ -19,76 +20,38 @@ const Featured = () => {
 
   return (
     <Wrapper>
-      <div className='container featured'>
+      <div className='container featured mt-5'>
         <h2 className='top-title'>Our Featured Bites</h2>
 
-        <div className='container products'>
+        <div className='container'>
           <div className='row'>
-            <div className='col-sm-4'>
-              {featured_products.map((product) => {
-                console.log(product)
-                return (
-                  <li key={product.id} {...product}>
-                    {product.name}
-                  </li>
-                )
-              })}
-            </div>
-          </div>
-        </div>
-
-        <div className='container delivery-steps'>
-          <div className='row'>
-            <h2 className='top-title'>How we Work</h2>
-            {deliverySteps.map((item) => {
-              const { id, title, desc, icon } = item
-
-              return (
-                <div className='col-sm-3' key={id}>
-                  <p className='icon'>{icon} </p>
-                  <p className='title'>{title} </p>
-                  <p className='desc'>{desc} </p>
-                </div>
-              )
+            {featured_products.map((product) => {
+              return <Product key={product.id} {...product} />
             })}
           </div>
         </div>
+        <Link to='/products' className='my-btn mt-4'>
+          View More products
+        </Link>
       </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
-  /* padding: 0.5rem 0; */
-  /* background-color: var(--gray-light); */
   .featured {
     text-align: center;
   }
 
-  .delivery-steps {
-    color: var(--dark);
+  img {
+    height: 225px;
   }
 
-  .icon {
-    font-size: 3rem;
-    margin-bottom: -0.5rem;
-  }
-
-  .title {
-    font-weight: bold;
-  }
-
-  .desc {
-    margin-top: -1rem;
-    font-size: 0.9rem;
-  }
-
-  /* @media screen and (min-width: 992px) {
-    hr {
-      font-size: 2rem;
-      font-weight: bold;
+  @media screen and (max-width: 576px) {
+    img {
+      height: 125px;
     }
-  } */
+  }
 `
 
 export default Featured

@@ -4,7 +4,10 @@ import styled from 'styled-components'
 const Footer = () => {
   return (
     <Wrapper>
-      <p>devgodric, fena webworks </p>
+      <p>
+        devgodric @fena_ webworks Copyright &copy; 2022 -
+        {new Date().getFullYear()}{' '}
+      </p>
     </Wrapper>
   )
 }
@@ -14,5 +17,9 @@ const Wrapper = styled.footer`
   color: var(--light);
   height: 4rem;
   text-align: center;
+
+  display: flex;
+  place-items: center;
+  justify-content: center;
 `
 export default Footer

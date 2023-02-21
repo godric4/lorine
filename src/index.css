@@ -37,6 +37,11 @@ a:hover {
   src: url('./assets/fonts/Ephesis-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'lobster';
+  src: url('./assets/fonts/lobster.ttf');
+}
+
 /****** Global Classes *****/
 
 .my-btn {
@@ -55,12 +60,12 @@ a:hover {
   border-color: transparent;
 }
 .my-btn:hover {
-  color: var(--light);
-  background: var(--color);
+  color: var(--dark);
+  background: var(--gray-light);
 }
 
 .top-title {
-  font-family: ephesis;
+  font-family: lobster;
   font-size: 2rem;
   font-weight: bolder;
   color: var(--dark);

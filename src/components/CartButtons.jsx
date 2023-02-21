@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   margin-right: 1rem;
 
   .cart-btn {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
     display: flex;
 
@@ -52,7 +52,7 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     color: var(--light);
     padding: 12px;
     font-weight: bold;

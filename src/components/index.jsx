@@ -7,6 +7,9 @@ import Footer from './Footer'
 import Reviews from './desktop/Reviews'
 import Loading from './Loading'
 import ErrorWarn from './ErrorWarn'
+import Product from './Product'
+import IconMsg from './desktop/IconMsg'
+import SocialIcons from './SocialIcons'
 
 export {
   Navbar,
@@ -18,4 +21,7 @@ export {
   Reviews,
   Loading,
   ErrorWarn,
+  Product,
+  IconMsg,
+  SocialIcons,
 }
