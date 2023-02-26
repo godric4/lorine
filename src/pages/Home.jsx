@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Featured, Hero, IconMsg, Reviews } from '../components'
+import { Featured, Hero, IconMsg } from '../components'
 import babe from '../assets/images/babe.jpg'
 import { FaWhatsapp } from 'react-icons/fa'
 

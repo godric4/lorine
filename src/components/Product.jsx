@@ -14,7 +14,7 @@ const Product = ({ id, image, name, price }) => {
           <FaShoppingBag />
         </Link>
       </div>
-      <div className='desc'>
+      <div className='desc text-center'>
         <p className='name'>{name}</p>
         <p>{formatPrice(price)}</p>
       </div>
@@ -33,7 +33,6 @@ const Wrapper = styled.div`
     width: 100%;
     display: block;
     object-fit: cover;
-    border-radius: var(--radius);
     transition: var(--transition);
   }
   .link {
@@ -68,6 +67,8 @@ const Wrapper = styled.div`
   .desc .name {
     font-weight: 700;
     padding: 0 0.2rem;
+    color: var(--dark);
+    margin-top: -1rem;
   }
 
   .desc p {

@@ -1,10 +1,12 @@
 import { FaBirthdayCake, FaClipboardList, FaTruckMoving } from 'react-icons/fa'
 
 export const links = [
-  { id: 1, url: '/shop', pathName: 'shop' },
+  { id: 1, url: '/products', pathName: 'shop' },
   { id: 2, url: '/about', pathName: 'about' },
   { id: 3, url: '/wedding', pathName: 'wedding' },
-  { id: 4, url: '/contact', pathName: 'Find Us' },
+  { id: 4, url: '/tips', pathName: 'Event tips' },
+  { id: 5, url: '/galleria', pathName: 'galleria' },
+  { id: 6, url: '/contact', pathName: 'Find Us' },
 ]
 
 export const products_url = 'https://course-api.com/react-store-products'

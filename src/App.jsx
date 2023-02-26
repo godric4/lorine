@@ -6,6 +6,7 @@ import {
   Homepage,
   SingleProductPage,
   Contactpage,
+  Shop,
 } from './pages'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='*' element={<Errorpage />} />
-          {/* <Route path='products' element={<Products />} /> */}
+          <Route path='/products' element={<Shop />} />
           <Route path='products/:id' element={<SingleProductPage />} />
           <Route path='/about' element={<Aboutpage />} />
           <Route path='/contact' element={<Contactpage />} />
