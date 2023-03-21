@@ -1,70 +1,95 @@
+import imageA from '../assets/images/camera.jpg'
+import imageB from  '../assets/images/shirt.jpg'
+import imageC from '../assets/images/choco.png'
+import imageD from '../assets/images/white.jpg'
+import imageE from '../assets/images/pink.png'
+
 const items = [
  {
   id: 1,
-  title: 'Camera Cake',
-  imgUrl: '../assets/images/camera.jpg',
+  name: 'Camera Cake',
+  imgUrl: imageA,
   price: 159999,
-  category: 'custom cakes'
+  featured: true,
+  category: 'custom cakes',
+  subImages: [
+   imageA, imageB, imageC, imageD, imageE
+  ]
  },
  {
   id: 2,
-  title: 'Tee-Shirt Cake',
-  imgUrl: '../assets/images/shirt.jpg',
+  name: 'Tee-Shirt Cake',
+  imgUrl: imageB,
   price: 379999,
+  featured: true,
   category: 'custom cakes',
   subImages: [
-   {
-    "image1": '../assets/images/shirt.jpg',
-    "image2": '../assets/images/camera.jpg',
-    "image3": '../assets/images/white.jpg',
-    "image4": '../assets/images/CakeBg.jpg'
-   }
+   imageA, imageB, imageC, imageD, imageE
   ]
  },
 
  {
   id: 3,
-  title: 'Chocolate Cake',
-  imgUrl: '../assets/images/CakeBg.jpg',
+  name: 'Chocolate Cake',
+  imgUrl: imageC,
   price: 289999,
+  featured: true,
   category: 'Chocolate cakes',
   subImages: [
-   {
-    "image1": '../assets/images/shirt.jpg',
-    "image2": '../assets/images/camera.jpg',
-    "image3": '../assets/images/white.jpg',
-    "image4": '../assets/images/CakeBg.jpg'
-   }
+   imageA, imageB, imageC, imageD, imageE
   ]
  },
  {
   id: 4,
-  title: 'Butter Cream Cake',
-  imgUrl: '../assets/images/white.jpg',
+  name: 'Butter Cream Cake',
+  imgUrl: imageD,
   price: 189999,
   category: 'Butter Cream cakes',
   subImages: [
-   {
-    "image1": '../assets/images/shirt.jpg',
-    "image2": '../assets/images/camera.jpg',
-    "image3": '../assets/images/white.jpg',
-    "image4": '../assets/images/CakeBg.jpg'
-   }
+   imageA, imageB, imageC, imageD, imageE
   ]
  },
  {
   id: 5,
-  title: 'Butter Cream Pink Cake',
-  imgUrl: '../assets/images/pink.png',
+  name: 'Butter Cream Pink Cake',
+  imgUrl: imageE,
   price: 289999,
   category: 'Butter Cream cakes',
   subImages: [
-   {
-    "image1": '../assets/images/shirt.jpg',
-    "image2": '../assets/images/camera.jpg',
-    "image3": '../assets/images/white.jpg',
-    "image4": '../assets/images/CakeBg.jpg'
-   }
+   imageA, imageB, imageC, imageD, imageE
+  ]
+ },
+
+ {
+  id: 6,
+  name: 'Butter Cream Cake',
+  imgUrl: imageD,
+  price: 189999,
+  featured: true,
+  category: 'Butter Cream cakes',
+  subImages: [
+   imageA, imageB, imageC, imageD, imageE
+  ]
+ },
+
+ {
+  id: 7,
+  name: 'Butter Cream Cake',
+  imgUrl: imageA,
+  price: 189999,
+  category: 'Butter Cream cakes',
+  subImages: [
+   imageA, imageB, imageC, imageD, imageE
+  ]
+ },
+ {
+  id: 8,
+  name: 'Butter Cream Cake',
+  imgUrl: imageB,
+  price: 189999,
+  category: 'Butter Cream cakes',
+  subImages: [
+   imageA, imageB, imageC, imageD, imageE
   ]
  },
 ]

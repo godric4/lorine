@@ -1,18 +1,19 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
-import { Header, Navbar } from './components'
-import { Homepage } from './pages'
+import { Footer, Header, Navbar } from './components'
+import { ErrorPage, Homepage } from './pages'
 
 
 const App = () => {
  return (
   <>
    <Router>
-    <Header />
-    {/* <Navbar /> */}
+    <Navbar />
     <Routes>
      <Route exact path="/" element={<Homepage />} />
+     <Route path="*" element={<ErrorPage />} />
     </Routes>
+    <Footer />
    </Router>
   </>
  )

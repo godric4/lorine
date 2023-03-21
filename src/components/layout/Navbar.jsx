@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaBirthdayCake } from 'react-icons/fa'
 import styled from 'styled-components'
-import CartButtons from './cart/CartButtons'
+import CartButtons from '../cart/CartButtons'
 
 const Navbar = () => {
  return (
@@ -18,10 +18,14 @@ const Navbar = () => {
 }
 
 const Wrapper = styled.nav`
- /* background-color: black; */
- color: white;
+
+ color: var(--light);
+ position:fixed;
+ z-index: 10;
+ width: 100vw;
 
  .nav-header {
+  margin-top: .5rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
