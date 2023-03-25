@@ -1,17 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MiniHero } from '../components'
+import { MiniHero, ProductList } from '../components'
 
-const Cart = () => {
+const Products = () => {
  return (
   <Wrapper>
-   <MiniHero title='Your Cart' />
-   <h1>Cart</h1>
+   <MiniHero title='Products' />
+   <ProductList />
   </Wrapper>
  )
 }
 
-export default Cart
+export default Products
 
 
 const Wrapper = styled.section`

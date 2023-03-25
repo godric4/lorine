@@ -1,0 +1,44 @@
+{
+ "data": [
+  {
+   "id": 1,
+   "name": "Camera Cake",
+   "imgUrl": "./images/camera.jpg",
+   "price": 9499999,
+   "featured": true,
+   "category": "custom cakes"
+  },
+  {
+   "id": 2,
+   "name": "Choco Cake",
+   "imgUrl": "./images/choco.png",
+   "price": 3449999,
+   "featured": true,
+   "category": "chocolate"
+  },
+  {
+   "id": 3,
+   "name": "Polo Shirt Cake",
+   "imgUrl": "./images/shirt.jpg",
+   "price": 1229999,
+   "featured": true,
+   "category": "custom cakes"
+  },
+  {
+   "id": 4,
+   "name": "Butter Cream Cake",
+   "imgUrl": "./images/white.jpg",
+   "price": 7159999,
+   "featured": true,
+   "category": "Butter cream"
+  },
+  {
+   "id": 5,
+   "name": "Pink Cake",
+   "imgUrl": "./images/pink.png",
+   "price": 1859999,
+   "featured": false,
+   "category": "Butter cream"
+  }
+ ]
+}

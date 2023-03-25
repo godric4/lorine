@@ -4,11 +4,14 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { formatPrice } from '../../utils/helpers'
 
-const ProductCard = ({ name, id, imgUrl, price }) => {
+const ProductCard = ({ name, id, image, price }) => {
+
+ console.log(image)
+
  return (
   <Wrapper className='col-sm-3 col-6 mb-3'>
    <div className="container">
-    <img src={imgUrl} alt={name} />
+    <img src={image} alt={name} />
     <Link to={`/products/${id}`} className='link'>
      <FaShoppingBag />
     </Link>

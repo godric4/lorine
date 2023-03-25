@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import headerBg from '../../assets/images/kapoor.jpg'
-import Hero from '../Hero'
+import Hero from './Hero'
 import Navbar from './Navbar'
 
 const Header = () => {

@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import data from '../../utils/data'
-import ProductCard from './ProductCard'
-
+import Featured from './Featured'
 const Showcase = () => {
 
  return (
@@ -11,11 +9,7 @@ const Showcase = () => {
    <h1 className="top-title mt-4">Featured Products</h1>
    <div className="container">
     <div className="row">
-     {
-      data.map((product) => {
-       return <ProductCard key={product.id} {...product} />
-      })
-     }
+     <Featured />
     </div>
    </div>
   </Wrapper >

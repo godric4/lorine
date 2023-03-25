@@ -7,7 +7,7 @@ const CartButtons = () => {
  return (
   <Wrapper>
    <div className="cart-btn">
-    <FaShoppingBasket />
+    <h1>  <FaShoppingBasket /></h1>
    </div>
   </Wrapper>
  )

@@ -1,13 +1,13 @@
 import { FaBirthdayCake, FaClipboardList, FaTruckMoving } from 'react-icons/fa'
 
 export const links = [
- { id: 1, url: '/products', pathName: 'Menu' },
- { id: 2, url: '/about', pathName: 'about' },
- { id: 3, url: '/wedding', pathName: 'wedding' },
- { id: 4, url: '/tips', pathName: 'Event tips' },
- { id: 5, url: '/galleria', pathName: 'galleria' },
- { id: 6, url: '/contact', pathName: 'Find Us' },
+ { id: 1, url: '/products', pathName: 'menu' },
+ { id: 2, url: '/events', pathName: 'events' },
+ { id: 3, url: '/gallery', pathName: 'galleria' },
+ { id: 4, url: '/about', pathName: 'about' },
+ { id: 5, url: '/contact', pathName: 'Find Us' },
 ]
+
 
 export const products_url = '/.netlify/functions/products';
 export const single_product_url = `/.netlify/functions/single-product?id=`;

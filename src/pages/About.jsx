@@ -2,16 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import { MiniHero } from '../components'
 
-const Cart = () => {
+const About = () => {
  return (
   <Wrapper>
-   <MiniHero title='Your Cart' />
-   <h1>Cart</h1>
+   <MiniHero title='About us' />
+   <h1>About</h1>
   </Wrapper>
  )
 }
 
-export default Cart
+export default About
 
 
 const Wrapper = styled.section`
