@@ -8,7 +8,7 @@ import { useCartContext } from '../../context/cart_context'
 const AddToCart = ({ product }) => {
  // add to cart
  const { addToCart } = useCartContext()
- const { id } = product
+ const { id, stock } = product
 
  const [amount, setAmount] = useState(1)
 
@@ -40,7 +40,7 @@ const AddToCart = ({ product }) => {
     <Link
      to='/cart'
      className='my-btn btn'
-     onClick={() => addToCart(id, mainColor, amount, product)}
+     onClick={() => addToCart(id, amount, product)}
     >
      add to cart
     </Link>
@@ -52,7 +52,7 @@ const Wrapper = styled.section`
   /* margin-top: 2rem; */
   
   .btn-container {
-    margin-top: -1.9rem;
+    margin-top: -1rem;
   }
 
   .btn {

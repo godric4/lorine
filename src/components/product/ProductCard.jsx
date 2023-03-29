@@ -6,8 +6,6 @@ import { formatPrice } from '../../utils/helpers'
 
 const ProductCard = ({ name, id, image, price }) => {
 
- console.log(image)
-
  return (
   <Wrapper className='col-sm-3 col-6 mb-3'>
    <div className="container">

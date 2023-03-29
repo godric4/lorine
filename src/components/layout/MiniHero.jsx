@@ -19,7 +19,7 @@ const Wrapper = styled.section`
   align-items: center;
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 
   a {
     color: var(--dark);

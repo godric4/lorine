@@ -18,6 +18,7 @@ import AmountButtons from './cart/AmountButtons';
 import AddToCart from './cart/AddToCart';
 import ProductImages from './product/ProductImages';
 import ProductList from './product/ProductList';
+import Sort from './layout/Sort';
 
 export {
  Navbar,
@@ -40,6 +41,7 @@ export {
  AddToCart,
  ProductImages,
  ProductList,
+ Sort,
 }
 
 

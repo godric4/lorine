@@ -88,3 +88,9 @@ export const FilterProvider = ({ children }) => {
   </FilterContext.Provider>
  )
 }
+
+
+export const useFilterContext = () => {
+ return useContext(FilterContext)
+}
+

@@ -136,7 +136,7 @@ const Wrapper = styled.nav`
     }
 
     .cart-buttons {
-     margin-right: -1rem;
+     margin-right: .7rem;
     }
 
    
