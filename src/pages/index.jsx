@@ -2,11 +2,11 @@ import Homepage from './Home';
 import ErrorPage from './Error';
 import ContactPage from './Contact';
 import AboutPage from './About';
-import EventsPage from './Events';
-import GalleryPage from './Gallery';
 import ProductsPage from './Products';
 import CartPage from './Cart';
 import SingleProductPage from './SingleProduct';
+import CheckoutPage from './Checkout';
+import PrivateRoute from './PrivateRoute';
 
 
 export {
@@ -14,9 +14,9 @@ export {
  ErrorPage,
  ContactPage,
  AboutPage,
- EventsPage,
- GalleryPage,
  ProductsPage,
  CartPage,
  SingleProductPage,
+ CheckoutPage,
+ PrivateRoute
 }

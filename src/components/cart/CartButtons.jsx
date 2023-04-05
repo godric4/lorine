@@ -4,11 +4,14 @@ import { FaShoppingCart, FaUserMinus, FaUserPlus } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../../context/cart_context'
 import { useUtilsContext } from '../../context/utils_context'
+import { useUserContext } from '../../context/user_context'
 
 
 const CartButtons = () => {
  const { closeSidebar } = useUtilsContext()
  const { total_items, clearCart } = useCartContext()
+ const { loginWithRedirect, myUser, logout } = useUserContext()
+
  return (
   <Wrapper className='cart-btn-wrapper'>
    <Link to='/cart' className='cart-btn' onClick={closeSidebar}>
@@ -17,16 +20,19 @@ const CartButtons = () => {
      <span className='cart-value'>{total_items}</span>
     </span>
    </Link>
+   {
+    myUser ? <button
+     type='button'
+     className='auth-btn'
+     onClick={() => logout({ returnTo: window.location.origin })}
+    >
+     <span>Logout</span>  <FaUserMinus />
+    </button> : <button type='button' className='auth-btn' onClick={loginWithRedirect} >
+     <span>Login</span> <FaUserPlus />
+    </button>
+   }
 
-   <button
-    type='button'
-    className='auth-btn'
-   >
-    <span>Logout</span>  <FaUserMinus />
-   </button>
-   <button type='button' className='auth-btn' >
-    <span>Login</span> <FaUserPlus />
-   </button>
+
   </Wrapper>
  )
 }
@@ -45,6 +51,7 @@ display: flex;
     display: flex;
     align-items: center;
     position: relative;
+      margin-top: 10px;
     svg {
       height: 1.6rem;
       margin-left: 5px;
@@ -70,9 +77,10 @@ display: flex;
     background: transparent;
     border-color: transparent;
     border-bottom: 1px solid white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
      color: var(--light); 
+       margin-left: 5px;
    
     svg {
       margin-left: 5px;

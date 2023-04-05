@@ -6,11 +6,10 @@ import {
  CartPage,
  ContactPage,
  ErrorPage,
- EventsPage,
- GalleryPage,
  Homepage,
  ProductsPage,
- SingleProductPage
+ SingleProductPage,
+ CheckoutPage
 } from './pages'
 
 
@@ -25,11 +24,10 @@ const App = () => {
      <Route path="*" element={<ErrorPage />} />
      <Route exact path="/contact" element={<ContactPage />} />
      <Route exact path="/about" element={<AboutPage />} />
-     <Route exact path="/events" element={<EventsPage />} />
-     <Route exact path="/gallery" element={<GalleryPage />} />
      <Route exact path="/products" element={<ProductsPage />} />
      <Route path='products/:id' element={<SingleProductPage />} />
      <Route exact path="/cart" element={<CartPage />} />
+     <Route exact path="/checkout" element={<CheckoutPage />} />
     </Routes>
     <Footer />
    </Router>

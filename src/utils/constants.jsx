@@ -1,11 +1,11 @@
 import { FaBirthdayCake, FaClipboardList, FaTruckMoving } from 'react-icons/fa'
 
 export const links = [
- { id: 1, url: '/products', pathName: 'menu' },
- { id: 2, url: '/events', pathName: 'events' },
- { id: 3, url: '/gallery', pathName: 'galleria' },
- { id: 4, url: '/about', pathName: 'about' },
- { id: 5, url: '/contact', pathName: 'Find Us' },
+
+ { id: 1, url: '/products', pathName: 'Our menu' },
+ { id: 2, url: '/about', pathName: 'about' },
+ { id: 3, url: '/contact', pathName: 'contact' },
+
 ]
 
 

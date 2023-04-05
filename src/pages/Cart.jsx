@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MiniHero } from '../components'
+import { MiniHero, CartContent } from '../components'
 import { Link } from 'react-router-dom'
 
 const Cart = () => {
  return (
   <Wrapper>
    <MiniHero title='Your Cart' />
-   <h1>Cart</h1>
+   <CartContent />
   </Wrapper>
  )
 }

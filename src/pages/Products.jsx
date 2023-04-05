@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MiniHero, ProductList, Sort } from '../components'
+import { Filters, MiniHero, ProductList, Sort } from '../components'
 
 const Products = () => {
  return (
   <Wrapper>
    <MiniHero title='Products' />
+   <Filters />
    <Sort />
    <ProductList />
   </Wrapper>

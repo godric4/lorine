@@ -39,6 +39,7 @@ const Featured = () => {
 }
 
 const Wrapper = styled.section` 
+margin-top: -2.5rem;
  
   .featured {
     text-align: center;

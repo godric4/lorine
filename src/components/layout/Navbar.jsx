@@ -6,34 +6,17 @@ import logo from '../../assets/images/logo.jpg'
 import { Link } from 'react-router-dom'
 import { links } from '../../utils/constants'
 import { useUtilsContext } from '../../context/utils_context'
+import { useUserContext } from '../../context/user_context'
 
 const Navbar = () => {
 
  const { openSidebar } = useUtilsContext()
- const [scrolled, setScrolled] = useState("")
- const isScrolled = window.scrollY;
-
- useEffect(() => {
-  const handleScroll = () => {
-
-
-   if (isScrolled !== scrolled) {
-    setScrolled(isScrolled)
-   }
-  }
-
-  window.addEventListener("scroll", handleScroll)
-
-  return () => {
-   window.removeEventListener("scroll", handleScroll)
-  }
-
- }, []);
+ const { myUser } = useUserContext()
 
 
  return (
   <Wrapper>
-   <div className={isScrolled ? 'scrolled' : ''}>
+   <div className="">
     <div className='nav-container'>
      <div className='nav-header'>
       <button className="nav-switch mx-1">
@@ -59,6 +42,11 @@ const Navbar = () => {
         </li>
        })
       }
+      {myUser && (
+       <li>
+        <Link to="/checkout" className='nav-link'>Checkout</Link>
+       </li>
+      )}
      </ul>
      <div className="cart-buttons">
       <CartButtons />
@@ -107,7 +95,7 @@ const Wrapper = styled.nav`
 
   .name {
    font-family: lobster;
-   font-weight: bold;
+   font-weight: 500;
   }
 
    .nav-switch {
@@ -124,7 +112,7 @@ const Wrapper = styled.nav`
     margin: 0 0.5rem;
     font-size: 1.2rem;
     text-transform: capitalize;
-    font-weight: bold;
+    font-weight: 400;
   }
 
    @media screen and (max-width: 992px) {
@@ -136,7 +124,7 @@ const Wrapper = styled.nav`
     }
 
     .cart-buttons {
-     margin-right: .7rem;
+     margin-right: -1rem;
     }
 
    
