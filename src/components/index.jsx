@@ -24,6 +24,7 @@ import CartColumns from './cart/CartColumns';
 import CartItem from './cart/CartItem';
 import CartTotals from './cart/CartTotals';
 import CartContent from './cart/CartContent'
+import CheckoutForm from './cart/CheckoutForm'
 
 
 
@@ -55,6 +56,7 @@ export {
  CartTotals,
  CartItem,
  CartContent,
+ CheckoutForm
 }
 
 

@@ -1,11 +1,46 @@
 import React from 'react'
+import styled from 'styled-components'
+import { CheckoutForm, MiniHero } from '../components'
+import { useCartContext } from '../context/cart_context'
+import { Link } from 'react-router-dom'
 
 const Checkout = () => {
+ const { cart } = useCartContext()
  return (
-  <div>
-   <h1>Checkout Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ducimus asperiores eos doloremque atque mollitia illum delectus numquam necessitatibus magnam facere blanditiis nam consectetur quibusdam aliquam pariatur quisquam, corporis fugiat nemo reiciendis nesciunt? Distinctio minima nisi dicta nostrum perspiciatis qui saepe blanditiis rem aperiam magnam alias, illum temporibus recusandae? Aspernatur itaque dolorem sequi, enim ipsa nulla voluptatem harum nesciunt eius saepe veniam architecto hic rerum debitis ipsam. Beatae recusandae qui numquam possimus minima laudantium quas quisquam repellat ex consequuntur cum perferendis, eos sed quo omnis suscipit distinctio non fugiat nostrum quidem officiis nam? Accusantium voluptatibus qui voluptatem, magnam porro molestias?</h1>
-  </div>
+  <Wrapper>
+   <MiniHero title='Checkout' />
+   {cart.length < 1 ? (
+    <div className='empty'>
+     <h2>Your cart is empty</h2>
+     <Link to='/products' className='my-btn'>
+      fill it
+     </Link>
+    </div>
+   ) : (
+    <CheckoutForm />)}
+  </Wrapper>
  )
 }
 
 export default Checkout
+
+
+const Wrapper = styled.section`
+ margin-top: -1rem;
+  min-height: 90vh;
+  padding-top: 5rem;
+
+  .empty {
+   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  overflow: hidden;
+  }
+`
+
+
+
+
+

@@ -9,28 +9,39 @@ import {
  Homepage,
  ProductsPage,
  SingleProductPage,
- CheckoutPage
+ CheckoutPage,
+ PrivateRoute,
+ AuthWrapper
 } from './pages'
 
 
 const App = () => {
  return (
   <>
-   <Router>
-    <Navbar />
-    <Sidebar />
-    <Routes>
-     <Route exact path="/" element={<Homepage />} />
-     <Route path="*" element={<ErrorPage />} />
-     <Route exact path="/contact" element={<ContactPage />} />
-     <Route exact path="/about" element={<AboutPage />} />
-     <Route exact path="/products" element={<ProductsPage />} />
-     <Route path='products/:id' element={<SingleProductPage />} />
-     <Route exact path="/cart" element={<CartPage />} />
-     <Route exact path="/checkout" element={<CheckoutPage />} />
-    </Routes>
-    <Footer />
-   </Router>
+   <AuthWrapper>
+    <Router>
+     <Navbar />
+     <Sidebar />
+     <Routes>
+      <Route exact path="/" element={<Homepage />} />
+      <Route path="*" element={<ErrorPage />} />
+      <Route exact path="/contact" element={<ContactPage />} />
+      <Route exact path="/about" element={<AboutPage />} />
+      <Route exact path="/products" element={<ProductsPage />} />
+      <Route path='products/:id' element={<SingleProductPage />} />
+      <Route exact path="/cart" element={<CartPage />} />
+      <Route
+       path='/checkout'
+       element={
+        <PrivateRoute>
+         <CheckoutPage />
+        </PrivateRoute>
+       }
+      />
+     </Routes>
+     <Footer />
+    </Router>
+   </AuthWrapper>
   </>
  )
 }

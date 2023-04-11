@@ -17,9 +17,11 @@ const SingleProduct = () => {
   single_product: product,
   getSingleProduct,
  } = useProductsContext()
+
  useEffect(() => {
   getSingleProduct(`${url}${id}`)
  }, [id])
+
  useEffect(() => {
   if (error) {
    setTimeout(() => {

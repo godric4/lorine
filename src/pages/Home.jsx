@@ -28,7 +28,9 @@ const Home = () => {
        wish to make specific designs to suit your needs and occasion.
       </p>
       <p>
-       Kindly give us a buzz on whatsapp by clicking the Whatsapp icon <span><Link to="/" className='whatsapp'><FaWhatsapp /></Link></span> or send us your needs via email.
+       Kindly give us a buzz on whatsapp by clicking the Whatsapp icon <span> <Link href="https://wa.me/2348188534279?text=Hi %20Lorine,%20I%20want%20to%20place%20a%20customized%20cake%20order'" className='whatsapp'>
+        <FaWhatsapp />
+       </Link></span> or send us your needs via email.
        Our manager will contact you to clarify the details.
       </p>
       <p>
