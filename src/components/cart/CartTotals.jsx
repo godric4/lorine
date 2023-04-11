@@ -12,9 +12,6 @@ const CartTotals = () => {
   <Wrapper className='container'>
    <div>
     <article>
-     <h5>
-      subtotal :<span>{formatPrice(total_amount)}</span>
-     </h5>
      <hr />
      <h4>
       order total :<span>{formatPrice(total_amount)}</span>
@@ -41,7 +38,7 @@ const Wrapper = styled.section`
   article {
     border: 1px solid var(--dark);
     border-radius: 15px;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 1rem;
   }
   h4,
   h5,

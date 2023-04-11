@@ -25,7 +25,7 @@ import CartItem from './cart/CartItem';
 import CartTotals from './cart/CartTotals';
 import CartContent from './cart/CartContent'
 import CheckoutForm from './cart/CheckoutForm'
-
+import IncreaseCart from './cart/IncreaseCart';
 
 
 
@@ -56,7 +56,8 @@ export {
  CartTotals,
  CartItem,
  CartContent,
- CheckoutForm
+ CheckoutForm,
+ IncreaseCart
 }
 
 
