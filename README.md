@@ -1,4 +1,5 @@
 # lorine
+View demo https://lorinecakes.netlify.app/
 Simple desserts shop
 This store will have basic functionality of e-commerce stores which includes
 
