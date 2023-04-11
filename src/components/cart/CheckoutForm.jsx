@@ -50,7 +50,7 @@ const App = () => {
    <div className="container">
     <div className="checkout">
      <div className="checkout-form">
-      <p className="text-center top-title">Complete Purchase</p>
+      <p className="text-center mt-4">Complete Purchase</p>
       <div className="checkout-field">
        <label>Name</label>
        <input
@@ -108,12 +108,15 @@ const Wrapper = styled.section`
   letter-spacing: 0.1rem;
 }
 
+p {
+ color: var(--dark);
+}
+
 .checkout {
   display: flex;
   flex-direction: row;
   margin: 5% auto;
   width: 100%;
-  height: 430px;
   background: white;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
 }
@@ -121,11 +124,9 @@ const Wrapper = styled.section`
 
 .checkout {
   background: var(--gray-light);
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 430px;
   width: 75%;
 }
 
@@ -170,7 +171,7 @@ const Wrapper = styled.section`
   border-radius: 5px;
   width: 100%;
   height: 45px;
-  margin-top: 40px;
+  
 }
 
 `

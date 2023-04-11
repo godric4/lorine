@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ServiceIcons, Showcase, SocialIcons, Reviews, Header, ContactForm } from '../components'
+import { ServiceIcons, Showcase, SocialIcons, Header, ContactForm } from '../components'
 import { Link } from 'react-router-dom'
 import { FaWhatsapp } from 'react-icons/fa'
 import shirt from '../assets/images/shirt.jpg'
@@ -41,7 +41,6 @@ const Home = () => {
     </div>
    </div>
    <ContactForm />
-   <Reviews />
   </Wrapper>
  )
 }

@@ -63,8 +63,8 @@ const Wrapper = styled.section`
     margin-top: 1rem;
     text-align: center;
     font-weight: 700;
-    /* background: var(--dark);
-    color: var(--gray-light) */
+    background: var(--dark);
+    color: var(--gray-light)
   }
 
 

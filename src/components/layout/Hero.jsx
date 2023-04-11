@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
  useEffect(() => {
@@ -21,8 +22,12 @@ const Hero = () => {
     >
      IS YOUR BEST CHOICE
     </h1>
-    <button className='my-btn mx-1 order-btn'>Order Now</button>
-    <button className='my-btn mx-1 menu-btn'>See All Menus</button>
+    <button className='my-btn mx-1 order-btn'>
+     <Link to="/cart">Order Now</Link>
+    </button>
+    <button className='my-btn mx-1 menu-btn'>
+     <Link to="/shop">See All Menu</Link>
+    </button>
    </div>
   </Wrapper>
  )
