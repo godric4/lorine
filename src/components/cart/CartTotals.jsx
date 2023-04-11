@@ -13,9 +13,9 @@ const CartTotals = () => {
    <div>
     <article>
      <hr />
-     <h4>
+     <h6>
       order total :<span>{formatPrice(total_amount)}</span>
-     </h4>
+     </h6>
     </article>
     {myUser ? (
      <Link to='/checkout' className='btn'>
@@ -38,14 +38,14 @@ const Wrapper = styled.section`
   article {
     border: 1px solid var(--dark);
     border-radius: 15px;
-    padding: 1.5rem 1rem;
+    padding: .4rem 1rem;
   }
   h4,
   h5,
-  p {
+  /* p {
     display: grid;
     grid-template-columns: 200px 1fr;
-  }
+  } */
   p {
     text-transform: capitalize;
   }
